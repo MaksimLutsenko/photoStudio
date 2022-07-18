@@ -1,0 +1,40 @@
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding: 22px 0;
+}
+.header-items {
+	display: flex;
+	font-family: 'Montserrat-Medium';
+	font-size: 1rem;
+
+	.headr-nav {display: flex;}
+	.nav-items {
+		margin-right: 32px;
+		color: $text;
+
+		&:last-child {margin-right: auto;}
+		&:hover {color: $hbtn-color;}
+		&:active {color: $hactv-text;}
+	}
+	.header-btn{
+		padding: 8px 24px;
+		color: $hbtn-color;
+		font-size: 0.86em;
+		border: 2px solid $hbtn-color;
+		border-radius: 10px;
+		margin-right: 24px;
+		transition: .3s;
+		
+		&:hover{
+			background-color: $hbtn-color;
+			color: $hbtn-hov-text;
+		}
+		&:active{transform: scale(0.95);}
+	}
+	.header-tel{
+		margin: auto 0;
+	}
+}
