@@ -4,3 +4,28 @@
 
 //block
 @import 'block/header';
+
+.info{
+	background-image: url(../Img/info-bg.png);
+	background-size: cover;
+	color: $info-text;
+
+	.info-inner{padding: 150px 0 100px 140px;}
+	.info-content{width: 63.8%;}
+	h1{
+		font-family: 'Montserrat-Bold';
+		font-size: 4.13rem;
+		margin-bottom: 52px;
+	}
+	h2{margin: 0 30% 24px 0;}
+	p{margin-bottom: 32px;}
+}
+//btn
+.btn{
+	background: $bg-lgr;
+	border-radius: 10px;
+	padding: 22px;
+	text-align: center;
+	color: inherit;
+	font-family: 'Montserrat-SemiBold';
+}

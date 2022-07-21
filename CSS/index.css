@@ -9,7 +9,7 @@
 .header-items {
   display: flex;
   font-family: "Montserrat-Medium";
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .header-items .headr-nav {
   display: flex;
@@ -45,4 +45,36 @@
 }
 .header-items .header-tel {
   margin: auto 0;
+}
+
+.info {
+  background-image: url(../Img/info-bg.png);
+  background-size: cover;
+  color: #F5F5F5;
+}
+.info .info-inner {
+  padding: 150px 0 100px 140px;
+}
+.info .info-content {
+  width: 63.8%;
+}
+.info h1 {
+  font-family: "Montserrat-Bold";
+  font-size: 4.13rem;
+  margin-bottom: 52px;
+}
+.info h2 {
+  margin: 0 30% 24px 0;
+}
+.info p {
+  margin-bottom: 32px;
+}
+
+.btn {
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
+  border-radius: 10px;
+  padding: 22px;
+  text-align: center;
+  color: inherit;
+  font-family: "Montserrat-SemiBold";
 }
