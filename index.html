@@ -5,8 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="CSS/reset.css">
 	<link rel="stylesheet" href="CSS/base.css">
+	<link rel="stylesheet" href="CSS/swiper.css">
 	<link rel="stylesheet" href="CSS/index.css">
 	<title>Фото Студия</title>
 	<link rel="shortcut icon" type="image/svg" href="/Img/favicon.svg">
@@ -51,34 +53,37 @@
 		<div class="slider-works">
 			<h1>Наши работы</h1>
 
-			<div class="slider">	
-					<button class="prev">
-						<div class="arrowL arrow"></div>
-					</button>
-					<div class="slider-list">
-						<div class="slider-track">
-						<img class="slider-items" src="Img/slider1.jpg" alt="">
-						<img class="slider-items" src="Img/slider2.jpg" alt="">
-						<img class="slider-items" src="Img/slider3.jpg" alt="">
-						<img class="slider-items" src="Img/slider4.jpg" alt="">
-						<img class="slider-items" src="Img/slider5.jpg" alt="">
-						</div>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+	
+					<div class="swiper-slide">
+						<img src="img/slider1.jpg" alt="">
 					</div>
-					<button class="next">
-						<div class="arrowR arrow"></div>
-					</button>
-			</div>
-			<div class="slider-dots">
-				<div class="dot active"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
+					<div class="swiper-slide">
+						<img src="img/slider2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slider3.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slider2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/slider3.jpg" alt="">
+					</div>
+				</div>
+	
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev">
+				</div>
+				<div class="swiper-button-next">
+				</div>
 			</div>
 		</div>
 	</main>
 
-	<!-- <script src="JS/block/slider.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="JS/block/swiper.js"></script>
 </body>
 
 </html>
