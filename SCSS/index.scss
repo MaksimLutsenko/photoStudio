@@ -4,3 +4,26 @@
 
 //block
 @import 'block/header';
+@import 'block/main';
+
+
+//btn
+.btn{
+	background: $bg-lgr;
+	border-radius: 10px;
+	padding: 22px;
+	text-align: center;
+	color: inherit;
+	font-family: 'Montserrat-SemiBold';
+}
+
+
+.slider-works{
+	min-width: 0px;
+	text-align: center;
+	padding: 20px;
+
+	h1{
+		margin: 80px 0 117px 0;
+	}
+}
