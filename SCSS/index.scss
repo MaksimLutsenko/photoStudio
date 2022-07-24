@@ -15,15 +15,32 @@
 	text-align: center;
 	color: inherit;
 	font-family: 'Montserrat-SemiBold';
+
+	&:hover{background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+	&:active{
+		background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+		transition: 0.2s;
+		transform: scale(0.95);
+	}
+}
+.slider-btn{
+	background-color: #fff;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	color: #E97522;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+
+	&:hover{background-color: #F5F5F5;}
+	&:active{background-color:#E97522; color:#fff;}
 }
 
 
+//slider-works
 .slider-works{
 	min-width: 0px;
 	text-align: center;
 	padding: 20px;
 
-	h1{
-		margin: 80px 0 117px 0;
-	}
+	h1{margin: 80px 0 117px 0;}
 }
