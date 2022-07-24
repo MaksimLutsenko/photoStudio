@@ -1,42 +1,31 @@
-.swiper-slide {width: 488px;}
-
-.swiper-button-next,.swiper-button-prev{
-	background-color: #fff;
-	color: transparent;
-	border-radius: 50%;
-	width: 70px;
-	height: 70px;
-	top: 40%;
-	margin: 0 auto;
-	stroke: #E97522;
-	background-image: none;
-}
+.slider-works_slide {width: 488px;}
+.btn-next, .btn-prev{top: 40%;}
 
 @media (min-width: 1350px){
-	.swiper-button-prev{left: 20vw;}
-	.swiper-button-next{right: 20vw;}
+	.btn-prev{left: 20vw;}
+	.btn-next{right: 20vw;}
 }
 @media (max-width: 1350px){
-	.swiper-button-prev{left: 10vw;}
-	.swiper-button-next{right: 10vw;}
+	.btn-prev{left: 10vw;}
+	.btn-next{right: 10vw;}
 }
 @media (max-width: 970px){
 	.swiper-slide{width: 50%;}
-	.swiper-button-next,.swiper-button-prev{
+	.btn-next, .btn-prev{
 		width: 50px;
 		height: 50px;
 		top: 20vw;
 }}
 @media (max-width: 500px){
-	.swiper-button-prev{left: 10px;}
-	.swiper-button-next{right: 10px;}
-	.swiper-button-next,.swiper-button-prev{
+	.btn-prev{left: 10px;}
+	.btn-next{right: 10px;}
+	.btn-next, .btn-prev{
 		width: 40px;
 		height: 40px;
 	} .swiper-pagination{display: none;}
 }
 @media (max-width: 500px){
-	.swiper-button-next,.swiper-button-prev{
+	.btn-next, .btn-prev{
 		width: 30px;
 		height: 30px;
 }}
