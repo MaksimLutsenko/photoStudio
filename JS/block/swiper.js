@@ -3,23 +3,22 @@ const sliderWorks = new Swiper('.swiper-works', {
 	preloadImages: true,
 
 	loop: true,
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      spaceBetween: 15,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 0.3,
-        modifier: 200,
-        slideShadows : true,
-      },
-
-      navigation: {
-        nextEl: '.btn-next',
-        prevEl: '.btn-prev',
-      },
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 0.3,
+    modifier: 200,
+    slideShadows : true,
+  },
+  navigation: {
+    nextEl: '.btn-next',
+    prevEl: '.btn-prev',
+  },
 
 	pagination: {
 		el: '.slider-dots',
@@ -30,7 +29,6 @@ const sliderWorks = new Swiper('.swiper-works', {
 const sliderLocation = new Swiper('.slider-location', {
   slidesPerView: 3,
   centeredSlides: true,
-  
   loop: true,
   grabCursor: true,
   spaceBetween: 15,
@@ -45,12 +43,10 @@ const sliderLocation = new Swiper('.slider-location', {
     1000: {
       slidesPerView: 3,
     },
-
   },
 
   navigation: {
     nextEl: '.next-location',
     prevEl: '.prev-location',
   },
-
 })

@@ -81,6 +81,26 @@
   margin: 80px 0 117px 0;
 }
 
+.swiper-location {
+  background-image: url(../Img/slider_location/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 80px;
+  text-align: center;
+}
+.swiper-location .swiper-location-title {
+  margin-bottom: 80px;
+}
+.swiper-location .btn {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.swiper-location .slider-items > img {
+  width: 438px;
+  height: 371px;
+}
+
 .btn {
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
   color: #FFFFFF;
@@ -112,24 +132,4 @@
 .slider-btn:active {
   background-color: #E97522;
   color: #FFFFFF;
-}
-
-.swiper-location {
-  background-image: url(../Img/slider_location/bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 60px 80px;
-  text-align: center;
-}
-.swiper-location .swiper-location-title {
-  margin-bottom: 80px;
-}
-.swiper-location .btn {
-  margin: 0 auto;
-  margin-top: 60px;
-}
-.swiper-location .slider-items > img {
-  width: 438px;
-  height: 371px;
 }
