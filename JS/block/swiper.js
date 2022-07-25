@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+const sliderWorks = new Swiper('.swiper-works', {
 	slidesPerView: 3,
 	preloadImages: true,
 
@@ -17,12 +17,40 @@ new Swiper('.swiper', {
       },
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.btn-next',
+        prevEl: '.btn-prev',
       },
 
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.slider-dots',
 		clickable: true,
 	},
 });
+
+const sliderLocation = new Swiper('.slider-location', {
+  slidesPerView: 3,
+  centeredSlides: true,
+  
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 15,
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+
+  },
+
+  navigation: {
+    nextEl: '.next-location',
+    prevEl: '.prev-location',
+  },
+
+})
