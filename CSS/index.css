@@ -75,16 +75,16 @@
   text-align: center;
   padding: 20px;
 }
-.slider-works h1 {
+.slider-works .slider-works-title {
   margin: 80px 0 117px 0;
 }
 
 .btn {
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
+  color: #FFFFFF;
   border-radius: 10px;
   padding: 22px;
   text-align: center;
-  color: inherit;
   font-family: "Montserrat-SemiBold";
 }
 .btn:hover {
@@ -97,7 +97,7 @@
 }
 
 .slider-btn {
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -109,5 +109,5 @@
 }
 .slider-btn:active {
   background-color: #E97522;
-  color: #fff;
+  color: #FFFFFF;
 }

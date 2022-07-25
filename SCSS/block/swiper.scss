@@ -1,10 +1,15 @@
+@import '../../SCSS/Colors';
+
 .slider-works_slide {width: 488px;}
-.btn-next, .btn-prev{top: 40%;}
+.btn-next, .btn-prev{
+	// top: 40%;
+	margin-top: -50px;
+}
 
 @media (min-width: 1350px){
 	.btn-prev{left: 20vw;}
 	.btn-next{right: 20vw;}
-}
+
 @media (max-width: 1350px){
 	.btn-prev{left: 10vw;}
 	.btn-next{right: 10vw;}
@@ -14,7 +19,7 @@
 	.btn-next, .btn-prev{
 		width: 50px;
 		height: 50px;
-		top: 20vw;
+		// top: 20vw;
 }}
 @media (max-width: 500px){
 	.btn-prev{left: 10px;}
@@ -22,24 +27,24 @@
 	.btn-next, .btn-prev{
 		width: 40px;
 		height: 40px;
-	} .swiper-pagination{display: none;}
+	} .slider-dots{display: none;}
 }
 @media (max-width: 500px){
 	.btn-next, .btn-prev{
 		width: 30px;
 		height: 30px;
-}}
-
-.swiper-pagination{
+}}}
+.slider-dots{
 	position: relative;
 	margin-top: 40px;
-}
-.swiper-pagination-bullet{
-	width: 8px;
-	height: 8px;
-	background-color: #B1B1B1;
-}
-.swiper-pagination-bullet-active{
-	background-color: #E97522;
-	transform: scale(1.5);
+
+	.swiper-pagination-bullet{
+		width: 8px;
+		height: 8px;
+		background-color: $dots-bg;
+	}
+		.swiper-pagination-bullet-active{
+		background-color: $dots-bg--active;
+		transform: scale(1.5);
+	}
 }

@@ -16,21 +16,21 @@
 		color: $text;
 
 		&:last-child {margin-right: auto;}
-		&:hover {color: $hbtn-color;}
-		&:active {color: $hactv-text;}
+		&:hover {color: $header-btn-color;}
+		&:active {color: $header-text--active;}
 	}
 	.header-btn{
 		padding: 8px 24px;
-		color: $hbtn-color;
+		color: $header-btn-color;
 		font-size: 0.86em;
-		border: 2px solid $hbtn-color;
+		border: 2px solid $header-btn-color;
 		border-radius: 10px;
 		margin-right: 24px;
 		transition: .3s;
 		
 		&:hover{
-			background-color: $hbtn-color;
-			color: $hbtn-hov-text;
+			background-color: $header-btn-color;
+			color: $header-btn--hover-text;
 		}
 		&:active{transform: scale(0.95);}
 	}
