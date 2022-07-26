@@ -10,28 +10,30 @@
 //btn
 .btn{
 	background: $bg-lgr;
+	color: $btn-color;
 	border-radius: 10px;
 	padding: 22px;
 	text-align: center;
-	color: inherit;
 	font-family: 'Montserrat-SemiBold';
 
-	&:hover{background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+	&:hover{background: $bg-lgr--hover;}
 	&:active{
-		background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+		background: $bg-lgr--active;
 		transition: 0.2s;
 		transform: scale(0.95);
 	}
 }
 .slider-btn{
-	background-color: #fff;
+	background-color: $slider-btn-bg;
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
-	color: #E97522;
+	color: $slider-arrow-color;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 
-	&:hover{background-color: #F5F5F5;}
-	&:active{background-color:#E97522; color:#fff;}
+	&:hover{background-color: $slider-btn-bg--hover;}
+	&:active{
+		background-color: $slider-btn-bg-active;
+		color: $slider-arrow-color--active;
+	}
 }
-

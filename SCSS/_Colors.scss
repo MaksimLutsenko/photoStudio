@@ -1,13 +1,27 @@
 $text: #4A4A4A;
 
 //header color
-$hactv-text: #333333;
-$hbtn-color: #E97522;
-$hbtn-hov-text: #fff;
+$header-text--active: #333333;
+$header-btn-color: #E97522;
+$header-btn--hover-text: #fff;
 
 //main
 	//btn
 	$bg-lgr: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
+	$bg-lgr--hover: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+	$bg-lgr--active: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+	$btn-color: #FFFFFF;
 
 	//info
 	$info-text: #F5F5F5;
+
+	//slider-btn(arrow-slider)
+	$slider-btn-bg: #FFFFFF;
+	$slider-arrow-color: #E97522;
+	$slider-btn-bg--hover: #F5F5F5;
+	$slider-btn-bg-active: #E97522;
+	$slider-arrow-color--active: #FFFFFF;
+
+	//slider-dots(pagination)
+	$dots-bg: #B1B1B1;
+	$dots-bg--active: #E97522;
