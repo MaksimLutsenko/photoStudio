@@ -101,41 +101,9 @@
   height: 371px;
 }
 
-.btn {
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
-  color: #FFFFFF;
-  border-radius: 10px;
-  padding: 22px;
-  text-align: center;
-  font-family: "Montserrat-SemiBold";
-}
-.btn:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-}
-.btn:active {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-  transition: 0.2s;
-  transform: scale(0.95);
-}
-
-.slider-btn {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  color: #E97522;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-}
-.slider-btn:hover {
-  background-color: #F5F5F5;
-}
-.slider-btn:active {
-  background-color: #E97522;
-  color: #FFFFFF;
-}
-
 .Services {
   text-align: center;
+  margin: 60px 0;
 }
 
 .Services-container {
@@ -143,7 +111,7 @@
   display: grid;
   gap: 30px;
   width: auto;
-  height: 100vh;
+  min-height: 100vh;
   margin: 80px 6.944vw;
   margin-top: 60px;
   grid-template-areas: "A A    B B   C C" "D D    B B   E E" "G G    F F   E E" "G G    H H   H H" "I I    J J   K K";
@@ -151,6 +119,7 @@
 .Services-container .cart {
   position: relative;
   box-sizing: border-box;
+  display: inline-block;
   min-width: 27.153vw;
   min-height: 27.431vw;
   border-radius: 15px;
@@ -218,4 +187,37 @@
 .cart-11 {
   grid-area: K;
   background-image: url("../Img/Services-cart/Cart11.jpg");
+}
+
+.btn {
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 22px;
+  text-align: center;
+  font-family: "Montserrat-SemiBold";
+}
+.btn:hover {
+  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+}
+.btn:active {
+  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+
+.slider-btn {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  color: #E97522;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.slider-btn:hover {
+  background-color: #F5F5F5;
+}
+.slider-btn:active {
+  background-color: #E97522;
+  color: #FFFFFF;
 }
