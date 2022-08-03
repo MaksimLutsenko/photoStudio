@@ -1,0 +1,128 @@
+$wrap: 1440;
+$mapW: 1220;
+$mapH: 826;
+
+$min-wrap: (min-width: 1440px);
+$max-wrap: (max-width: 1440px);
+
+@mixin mapPos($x, $y){
+	left: ($x / $mapW * 100%);
+	top: ($y / $mapH * 100%);
+}
+@function apx($px, $media){
+	@return $px / $media * 100vw;
+}
+
+//Stages-work //TODO: add color in files _Colors
+.Stages-work{
+	padding: 80px  100px;
+	display: block;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	
+	@media (max-width: 1440px){
+		overflow: hidden;
+	}
+
+	&-title{
+		text-align: center;
+		margin-bottom: 97px;
+	}
+	.map{
+		display: block;
+		width: 100%;
+		max-width: 1220px;
+		background: url('../Img/Stages-work--bg.svg') no-repeat center center / 100% auto;
+		margin: 0 auto;
+		position: relative;
+		counter-reset: map-item;
+
+		&::before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0;
+			padding-top: 67.70491803278689%;
+		}
+
+		&-items{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			width: 24.166666666666668vw;
+			height: 13.194444444444445vw;
+			border-radius: 12px;
+			border: 2px solid #E97522;
+			background: #fff;
+			padding: 1.388888888888889vw 2.777777777777778vw;
+			box-sizing: border-box;
+			position: absolute;
+
+			@media (min-width: 1440px){
+				width: 348px;
+				height: 190px;
+				padding: 20px 40px;
+			}
+
+			&::before{
+				counter-increment: map-item;
+				content: counter(map-item);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 3.472222222222222vw;
+				height: 3.472222222222222vw;
+				border-radius: 50%;
+				background: #F9F4EE;
+				color: #E97522;
+				font-size: 2.083333333333333vw;
+				font-weight: bold;
+				position: absolute;
+				left: apx(-16, 1440);
+				bottom: apx(-16, 1440);
+
+				@media (min-width: 1440px){
+					width: 50px;
+					height: 50px;
+					font-size: 30px;
+					left: -16px;
+					bottom: -16px;
+				}
+			}
+		}
+		&-title{
+			font-size: apx(18, 1440);
+			font-weight: bold;
+			line-height: 120%;
+			margin-bottom: apx(12, 1440);
+		}
+		&-content{
+			font-size: apx(16, 1440);
+			line-height: 140%;
+
+			@media (min-width: 1440px){
+				font-size: 16px;
+			}
+		}
+}
+.map{
+	&-items{
+		&:nth-child(1){
+			@include mapPos(0, 0);
+		}	
+		&:nth-child(2){
+			@include mapPos(621, 57);
+		}	
+		&:nth-child(3){
+			@include mapPos(872, 359);
+		}	
+		&:nth-child(4){
+			@include mapPos(162, 354);
+		}	
+		&:nth-child(5){
+			@include mapPos(326, 636);
+	}	}
+	}
+}
