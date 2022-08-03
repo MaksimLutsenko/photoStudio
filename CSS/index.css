@@ -189,6 +189,121 @@
   background-image: url("../Img/Services-cart/Cart11.jpg");
 }
 
+.Stages-work {
+  padding: 80px 100px;
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .Stages-work {
+    overflow: hidden;
+  }
+}
+.Stages-work-title {
+  text-align: center;
+  margin-bottom: 97px;
+}
+.Stages-work .map {
+  display: block;
+  width: 100%;
+  max-width: 1220px;
+  background: url("../Img/Stages-work--bg.svg") no-repeat center center/100% auto;
+  margin: 0 auto;
+  position: relative;
+  counter-reset: map-item;
+}
+.Stages-work .map::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 67.7049180328%;
+}
+.Stages-work .map-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 24.1666666667vw;
+  height: 13.1944444444vw;
+  border-radius: 12px;
+  border: 2px solid #E97522;
+  background: #fff;
+  padding: 1.3888888889vw 2.7777777778vw;
+  box-sizing: border-box;
+  position: absolute;
+}
+@media (min-width: 1440px) {
+  .Stages-work .map-items {
+    width: 348px;
+    height: 190px;
+    padding: 20px 40px;
+  }
+}
+.Stages-work .map-items::before {
+  counter-increment: map-item;
+  content: counter(map-item);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.4722222222vw;
+  height: 3.4722222222vw;
+  border-radius: 50%;
+  background: #F9F4EE;
+  color: #E97522;
+  font-size: 2.0833333333vw;
+  font-weight: bold;
+  position: absolute;
+  left: -1.1111111111vw;
+  bottom: -1.1111111111vw;
+}
+@media (min-width: 1440px) {
+  .Stages-work .map-items::before {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: -16px;
+    bottom: -16px;
+  }
+}
+.Stages-work .map-title {
+  font-size: 1.25vw;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 0.8333333333vw;
+}
+.Stages-work .map-content {
+  font-size: 1.1111111111vw;
+  line-height: 140%;
+}
+@media (min-width: 1440px) {
+  .Stages-work .map-content {
+    font-size: 16px;
+  }
+}
+.Stages-work .map-items:nth-child(1) {
+  left: 0%;
+  top: 0%;
+}
+.Stages-work .map-items:nth-child(2) {
+  left: 50.9016393443%;
+  top: 6.9007263923%;
+}
+.Stages-work .map-items:nth-child(3) {
+  left: 71.4754098361%;
+  top: 43.4624697337%;
+}
+.Stages-work .map-items:nth-child(4) {
+  left: 13.2786885246%;
+  top: 42.8571428571%;
+}
+.Stages-work .map-items:nth-child(5) {
+  left: 26.7213114754%;
+  top: 76.9975786925%;
+}
+
 .btn {
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
   color: #FFFFFF;
@@ -220,9 +335,4 @@
 .slider-btn:active {
   background-color: #E97522;
   color: #FFFFFF;
-}
-
-.Stages-work {
-  text-align: center;
-  padding: 80px 100px;
 }
