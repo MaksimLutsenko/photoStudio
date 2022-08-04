@@ -1,0 +1,50 @@
+$btn-color: #E97522;
+$more-bg: #F2F4F4;
+.more{
+	margin: 20px 0;//make a change
+	background-color: $more-bg;
+	.content{
+		padding: 40px 100px;
+		line-height: 26px;
+		.title{
+			text-align: center;
+			margin-bottom: 32px;
+		}
+		.dots{margin-left: -2px;}
+		.more-text{
+			display: none;
+			.addition{margin-top: 2em;}
+		}
+		.more-btn{
+			display: flex;
+			align-items: center;
+			padding-right: -60px;
+			width: 102%;
+			justify-content: end;
+			cursor: pointer;
+			.btn{
+				border: none;
+				background: none;
+				cursor: pointer;
+				color: $btn-color;
+				font-weight: 600;
+				font-style: bold;
+				&:nth-child(2){display: none;}
+			}
+			.arrow{
+				stroke: $btn-color;
+				vertical-align: middle;
+				margin-left: 5px;
+			}
+		}
+		&.content--more{
+			.dots{display: none;}
+			.more-text{display: inline-block;}
+			.more-btn{
+				.btn:nth-child(1){display: none;}
+				.btn:nth-child(2){display: block;}
+				.arrow{transform: rotate(90deg);}
+			}
+		}
+	}
+}
