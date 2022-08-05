@@ -1,7 +1,5 @@
-$btn-color: #E97522;
-$more-bg: #F2F4F4;
 .more{
-	margin: 20px 0;//make a change
+	margin-top: 40px;
 	background-color: $more-bg;
 	.content{
 		padding: 40px 100px;
@@ -20,21 +18,20 @@ $more-bg: #F2F4F4;
 			align-items: center;
 			padding-right: -60px;
 			width: 102%;
-			justify-content: end;
+			justify-content: flex-end;
 			cursor: pointer;
 			.btn{
 				border: none;
 				background: none;
 				cursor: pointer;
-				color: $btn-color;
+				color: $more-btn--color;
 				font-weight: 600;
 				font-style: bold;
 				&:nth-child(2){display: none;}
 			}
 			.arrow{
-				stroke: $btn-color;
+				stroke: $more-btn--color;
 				vertical-align: middle;
-				margin-left: 5px;
 			}
 		}
 		&.content--more{

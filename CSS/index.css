@@ -305,7 +305,7 @@
 }
 
 .more {
-  margin: 20px 0;
+  margin-top: 40px;
   background-color: #F2F4F4;
 }
 .more .content {
@@ -330,7 +330,7 @@
   align-items: center;
   padding-right: -60px;
   width: 102%;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
 .more .content .more-btn .btn {
@@ -347,7 +347,6 @@
 .more .content .more-btn .arrow {
   stroke: #E97522;
   vertical-align: middle;
-  margin-left: 5px;
 }
 .more .content.content--more .dots {
   display: none;
