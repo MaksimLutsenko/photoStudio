@@ -10,7 +10,7 @@ $max-wrap: (max-width: 1440px);
 	top: ($y / $mapH * 100%);
 }
 @function apx($px, $media){
-	@return $px / $media * 100vw;
+	@return ($px / $media * 100vw);
 }
 
 //Stages-work //TODO: add color in files _Colors

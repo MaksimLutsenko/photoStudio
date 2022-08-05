@@ -10,10 +10,10 @@ $header-btn--hover-text: #fff;
 	$bg-lgr: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
 	$bg-lgr--hover: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
 	$bg-lgr--active: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-	$btn-color: #FFFFFF;
+	$btn--color: #FFFFFF;
 
 	//info
-	$info-text: #F5F5F5;
+	$info--text: #F5F5F5;
 
 	//slider-btn(arrow-slider)
 	$slider-btn-bg: #FFFFFF;
@@ -25,3 +25,12 @@ $header-btn--hover-text: #fff;
 	//slider-dots(pagination)
 	$dots-bg: #B1B1B1;
 	$dots-bg--active: #E97522;
+
+	//more(more-text)
+	$more-btn--color: #E97522;
+	$more-bg: #F2F4F4;
+
+	//price-cart
+	$cart-level: #4A4A4A;
+	$price-caption: #838383;
+	$AdditlServsItem--bg: #fff;
