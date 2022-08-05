@@ -51,3 +51,78 @@
 @import '../elements/stagesWork-map';
 //More-block
 @import '../elements/more-text';
+
+//price
+.price{
+	background: url(../Img/Prise-bg.svg) no-repeat;
+	background-size: cover;
+	padding: 118px 100px 170px;
+	box-sizing: border-box;
+	&-title{
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	&-cart{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 22px;
+		.cart{
+			border-radius: 16px;
+			@for $i from 1 through 3 {
+				&:nth-child(0n + #{$i}){
+					background-image: url("../Img/price-cart/Card-"+$i+".png");}
+			}
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-sizing: border-box;
+			padding: 48px 14px 42px;
+			&-level{
+				font-size: 1.13rem;
+				font-family: "Montserrat-SemiBold";
+				margin-bottom: 16px;
+				color: $cart-level;
+			}
+			&-price{
+				font-family: "Montserrat-Bold";
+				font-size: 2.3rem;
+			}
+			.price-caption{color: $price-caption;}
+			&-level,&-price,.price-caption{margin-left: 30.5px;}
+			.services {
+				margin-top: 40px;
+				padding: 0 30.5px;
+				.services-item{
+					margin-bottom: 16px;
+					&:last-child{margin-bottom: auto;}
+					span{display: inline-block;}
+				}
+			}
+			.AdditionalServices {
+				margin-top: 32px;
+				margin-bottom: 52px;
+				text-align: center;
+				.title{
+					font-size: 1rem;
+					margin-bottom: 12px;
+				}
+				&-items {
+				display: flex;
+				justify-content: center;
+				gap: 5px;
+					.item {
+						padding: 6px;
+						// text-align: center;
+						border-radius: 5px;
+						background-color: $AdditlServsItem--bg;
+					}
+				}
+			}
+			&-btn {
+				width: 100%;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
