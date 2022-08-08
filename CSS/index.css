@@ -454,6 +454,58 @@
   text-transform: uppercase;
 }
 
+.certificate {
+  box-sizing: border-box;
+  margin: 80px 0 90px;
+  padding: 0 100px;
+}
+.certificate-title {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.certificate-cart {
+  background-color: #F2F4F4;
+  border-radius: 25px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.certificate-cart .cart-info {
+  margin-top: 112px;
+  margin-left: 120px;
+}
+.certificate-cart .cart-info > span {
+  font-size: 0.9rem;
+  color: #C1C1C1;
+  margin-bottom: 10px;
+}
+.certificate-cart .cart-info h1 {
+  font-size: 3rem;
+}
+.certificate-cart .cart-info .benefits {
+  margin-top: 50px;
+}
+.certificate-cart .cart-info .benefits div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+.certificate-cart .cart-info .benefits div:last-child {
+  margin-bottom: auto;
+}
+.certificate-cart .buy {
+  box-sizing: border-box;
+  text-align: center;
+}
+.certificate-cart .buy .btn {
+  margin-top: 24px;
+  margin-bottom: 38px;
+  padding: 14px 97.5px;
+}
+
 .btn {
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
   color: #FFFFFF;
