@@ -1,6 +1,7 @@
 .more{
 	margin-top: 40px;
 	background-color: $more-bg;
+	&.more-2{background-color: $more-bg2;}
 	.content{
 		padding: 40px 100px;
 		line-height: 26px;
@@ -16,8 +17,6 @@
 		.more-btn{
 			display: flex;
 			align-items: center;
-			padding-right: -60px;
-			width: 102%;
 			justify-content: flex-end;
 			cursor: pointer;
 			.btn{
@@ -36,7 +35,10 @@
 		}
 		&.content--more{
 			.dots{display: none;}
-			.more-text{display: inline-block;}
+			.more-text{
+				display: inline;
+				span + p{margin-top: 1em;}
+			}
 			.more-btn{
 				.btn:nth-child(1){display: none;}
 				.btn:nth-child(2){display: block;}

@@ -308,6 +308,9 @@
   margin-top: 40px;
   background-color: #F2F4F4;
 }
+.more.more-2 {
+  background-color: #F9F4EE;
+}
 .more .content {
   padding: 40px 100px;
   line-height: 26px;
@@ -328,8 +331,6 @@
 .more .content .more-btn {
   display: flex;
   align-items: center;
-  padding-right: -60px;
-  width: 102%;
   justify-content: flex-end;
   cursor: pointer;
 }
@@ -352,7 +353,10 @@
   display: none;
 }
 .more .content.content--more .more-text {
-  display: inline-block;
+  display: inline;
+}
+.more .content.content--more .more-text span + p {
+  margin-top: 1em;
 }
 .more .content.content--more .more-btn .btn:nth-child(1) {
   display: none;
