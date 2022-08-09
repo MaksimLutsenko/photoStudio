@@ -506,6 +506,15 @@
   padding: 14px 97.5px;
 }
 
+.reviews-slider {
+  min-width: 0px;
+}
+.reviews-slider-slide {
+  min-width: 0px;
+  max-width: 400px;
+  text-align: center;
+}
+
 .btn {
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28);
   color: #FFFFFF;

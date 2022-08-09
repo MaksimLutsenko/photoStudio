@@ -175,3 +175,16 @@
 		}
 	}
 }
+//reviews
+.reviews{
+	&-slider{
+		min-width: 0px;
+		// &-wrap{}
+		&-slide{
+			min-width: 0px;
+			max-width: 400px;
+			text-align: center;
+		}
+	}
+	// .add-review{}
+}
