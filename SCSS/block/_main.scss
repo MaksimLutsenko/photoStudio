@@ -176,15 +176,48 @@
 	}
 }
 //reviews
+@mixin flexColAic{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .reviews{
+	padding: 60px 100px 86px;
+	&-title{
+		text-align: center;
+		margin-bottom: 80px;
+	}
 	&-slider{
+		height: auto;
 		min-width: 0px;
-		// &-wrap{}
+		@include flexColAic;
+		&-wrap{height: auto;}
 		&-slide{
 			min-width: 0px;
-			max-width: 400px;
+			max-width: 100% / 3;
 			text-align: center;
+			transition: 0.2s;
+			margin-top: 100px;
+			@include flexColAic;
+			.slide-img{
+				max-width: 236px;
+				margin: 0;
+			}
+			.slide-title{margin-top: 30px;}
+			.slide-text{
+				margin-top: 14px;
+				font-family: 'Montserrat-Medium';
+			}
+			.review-more{
+				margin-top: 8px;
+				color: $more-btn--color;
+				font-family: 'Montserrat-SemiBold';
+			}
+			&.swiper-slide-active{margin-top: 0;}
+		}
+		.add-reviews{
+			margin-top: -50px;
+			padding: 14px 69.5px;
 		}
 	}
-	// .add-review{}
 }
