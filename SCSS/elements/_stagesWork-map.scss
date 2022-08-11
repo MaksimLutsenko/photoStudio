@@ -46,7 +46,7 @@ $max-wrap: (max-width: 1440px);
 			padding-top: 67.70491803278689%;
 		}
 
-		&-items{
+		.map-items{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -92,13 +92,13 @@ $max-wrap: (max-width: 1440px);
 				}
 			}
 		}
-		&-title{
+		.map-title{
 			font-size: apx(18, 1440);
 			font-weight: bold;
 			line-height: 120%;
 			margin-bottom: apx(12, 1440);
 		}
-		&-content{
+		.map-content{
 			font-size: apx(16, 1440);
 			line-height: 140%;
 
@@ -107,8 +107,8 @@ $max-wrap: (max-width: 1440px);
 			}
 		}
 }
-.map{
-	&-items{
+.Stages-work-map{
+	.map-items{
 		&:nth-child(1){
 			@include mapPos(0, 0);
 		}	
