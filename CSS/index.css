@@ -11,7 +11,7 @@
   font-family: "Montserrat-Medium";
   font-size: 0.9rem;
 }
-.header-items .headr-nav {
+.header-items .nav {
   display: flex;
 }
 .header-items .nav-items {
@@ -639,6 +639,68 @@
   color: #333333;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.footer {
+  padding: 60px 100px;
+  background-color: #F2F4F4;
+}
+.footer-items {
+  display: flex;
+  align-items: center;
+}
+.footer-items:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items address {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+}
+.footer hr {
+  border: 1px solid #B1B1B1;
+  margin: 30px 0;
+}
+.footer .nav-item {
+  color: #4A4A4A;
+  font-family: "Montserrat-SemiBold";
+  margin-right: 50px;
+}
+.footer .nav-item:last-child {
+  margin-right: auto;
+}
+.footer .nav-item:hover {
+  color: #E97522;
+}
+.footer .nav-item:active {
+  color: #333333;
+}
+.footer .socialNetwork {
+  margin-left: 32px;
+  display: inline;
+}
+.footer .socialNetwork-item {
+  margin-right: 24px;
+}
+.footer .socialNetwork-item:last-child {
+  margin-right: auto;
+}
+.footer .socialNetwork-item svg {
+  fill: #B1B1B1;
+}
+.footer .socialNetwork-item svg:hover {
+  fill: #919191;
+}
+.footer .socialNetwork-item svg:active {
+  fill: #E97522;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {

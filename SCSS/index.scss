@@ -5,8 +5,13 @@
 //block
 @import 'block/header';
 @import 'block/main';
+@import 'block/footer';
 
-
+//nav
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
 //btn
 .btn{
 	background: $bg-lgr;
