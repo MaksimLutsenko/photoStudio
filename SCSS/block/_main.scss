@@ -222,17 +222,14 @@
 	}
 }
 
-//address(map)
+//address(map) //TODO: move colors to "colors.scss"
 .address{
 	min-width: 83.333vw;
 	box-sizing: border-box;
 	margin: 100px 120px;
 	margin-bottom: 150px;
 	position: relative;
-	.map{
-		width: 70.667%;
-
-	}
+	.map{width: 70.667%;}
 	.feedback{
 		position: absolute;
 		top: -26px;
