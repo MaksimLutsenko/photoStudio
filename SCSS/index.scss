@@ -5,8 +5,13 @@
 //block
 @import 'block/header';
 @import 'block/main';
+@import 'block/footer';
 
-
+//nav
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
 //btn
 .btn{
 	background: $bg-lgr;
@@ -29,7 +34,7 @@
 	width: 70px;
 	height: 70px;
 	color: $slider-arrow-color;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 2px 10px $slider-btn--shodow;
 
 	&:hover{background-color: $slider-btn-bg--hover;}
 	&:active{

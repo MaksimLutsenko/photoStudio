@@ -175,3 +175,127 @@
 		}
 	}
 }
+//reviews
+@mixin flexColAic{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.reviews{
+	padding: 60px 100px 86px;
+	&-title{
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	&-slider{
+		height: auto;
+		min-width: 0px;
+		@include flexColAic;
+		&-wrap{height: auto;}
+		&-slide{
+			min-width: 0px;
+			max-width: 100% / 3;
+			text-align: center;
+			transition: 0.2s;
+			margin-top: 100px;
+			@include flexColAic;
+			.slide-img{
+				max-width: 236px;
+				margin: 0;
+			}
+			.slide-title{margin-top: 30px;}
+			.slide-text{
+				margin-top: 14px;
+				font-family: 'Montserrat-Medium';
+			}
+			.review-more{
+				margin-top: 8px;
+				color: $more-btn--color;
+				font-family: 'Montserrat-SemiBold';
+			}
+			&.swiper-slide-active{margin-top: 0;}
+		}
+		.add-reviews{
+			margin-top: -50px;
+			padding: 14px 69.5px;
+		}
+	}
+}
+
+//address(map) //TODO: move colors to "colors.scss"
+.address{
+	min-width: 83.333vw;
+	box-sizing: border-box;
+	margin: 100px 120px;
+	margin-bottom: 150px;
+	position: relative;
+	.map{width: 70.667%;}
+	.feedback{
+		position: absolute;
+		top: -26px;
+		right: 0;
+		min-width: 45.917%;
+		background-image: url("../Img/Form-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 81px 36px;
+		border-radius: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		form{
+			background-image: url("../Img/Form-bg.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-size: 0.75rem;
+			max-width: 479px;
+			display: flex;
+			flex-direction: column;
+
+			.form-title{
+				font-size: 1.9rem;
+				margin-bottom: 32px;
+				text-align: center;
+			}
+			.form-label{
+				font-family: 'Montserrat-Medium';
+				width: 100%;
+				color: #12162166;
+				margin-bottom: 16px;
+				&:last-child{margin-bottom: 32px;}
+				// span{opacity: 0.4;}
+			}
+			.form-input{
+				font-family: inherit;
+				width: 100%;
+				margin-top: 8px;
+				padding: 18px 16px;
+				border-radius: 5px;
+				color: #4A4A4A;
+				&::placeholder{
+					color: #B1B1B1;
+				}
+			}
+			.form-btn{
+				width: 100%;
+				padding: 14px 0;
+				text-align: center;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				font-size: inherit;	
+			}
+			.form-caption{
+				margin-top: 16px;
+				text-align: center;
+				font-size: inherit;
+				color: #585858;
+				a{
+					color: #333333;
+					text-decoration: underline;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

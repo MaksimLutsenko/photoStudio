@@ -44,4 +44,17 @@ const sliderLocation = new Swiper('.slider-location', {
     nextEl: '.next-location',
     prevEl: '.prev-location',
   },
-})
+});
+
+const sliderReviews = new Swiper('.reviews-slider',{
+  slidesPerView: 3,
+  grabCursor: true,
+  centeredSlides: true,
+  spaceBetween: 15,
+  loop: true,
+  
+  navigation: {
+    nextEl: '.next-review',
+    prevEl: '.prev-review',
+  },
+});
