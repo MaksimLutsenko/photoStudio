@@ -1,15 +1,18 @@
 .header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
   padding: 22px 0;
+  margin: 0 7.813vw;
 }
 
 .header-items {
   display: flex;
   font-family: "Montserrat-Medium";
-  font-size: 0.9rem;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+}
+.header-items:last-child {
+  flex-wrap: wrap-reverse;
 }
 .header-items .nav {
   display: flex;
@@ -62,7 +65,7 @@
 }
 .info h1 {
   font-family: "Montserrat-Bold";
-  font-size: 4.13rem;
+  font-size: calc(24px + 42 * ((100vw - 320px) / 1120));
   margin-bottom: 52px;
 }
 .info h2 {
@@ -380,11 +383,13 @@
 }
 .price-cart {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 22px;
 }
 .price-cart .cart {
+  margin: 0 auto;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;

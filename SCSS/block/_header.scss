@@ -1,14 +1,16 @@
 .header {
 	display: flex;
-	justify-content: space-around;
+	// justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	padding: 22px 0;
+	margin: 0 7.813vw;
 }
 .header-items {
 	display: flex;
 	font-family: 'Montserrat-Medium';
-	font-size: 0.9rem;
+	@include adaptiv-font(14,12);
+	&:last-child {flex-wrap: wrap-reverse;}
 
 	.nav {display: flex;}
 	.nav-items {

@@ -9,7 +9,7 @@
 	.info-content{width: 63.8%;}
 	h1{
 		font-family: 'Montserrat-Bold';
-		font-size: 4.13rem;
+		@include adaptiv-font(66,24);
 		margin-bottom: 52px;
 	}
 	h2{margin: 0 30% 24px 0;}
@@ -64,10 +64,12 @@
 	}
 	&-cart{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		gap: 22px;
 		.cart{
+			margin: 0 auto;
 			border-radius: 16px;
 			@for $i from 1 through 3 {
 				&:nth-child(0n + #{$i}){
