@@ -1,18 +1,20 @@
 .header {
+	box-sizing: border-box;
 	display: flex;
-	// justify-content: space-around;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	padding: 22px 0;
-	margin: 0 7.813vw;
+	.logo{
+		min-width: 63px;
+	}
 }
 .header-items {
 	display: flex;
 	font-family: 'Montserrat-Medium';
 	@include adaptiv-font(14,12);
-	&:last-child {flex-wrap: wrap-reverse;}
+	&:last-child {gap: 24px;}
 
-	.nav {display: flex;}
 	.nav-items {
 		margin-right: 32px;
 		color: $text;
@@ -37,4 +39,6 @@
 		&:active{transform: scale(0.95);}
 	}
 	.header-tel{margin: auto 0;}
+	.call{display: none;}
+	.burg-menu{display: none;}
 }
