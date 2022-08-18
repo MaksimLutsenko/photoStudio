@@ -17,28 +17,37 @@
 
 <body>
 	<header class="header">
-		<div class="header-items">
+		<div class="header-item">
 			<div class="logo">
 				<img class="logo-img" src="Img/Logo.svg" alt="">
 			</div>
 		</div>
-		<div class="header-items">
+		<div class="header-item">
 			<nav class="nav">
-					<a class="nav-items" href="#portfolio">Портфолио</a>
-					<a class="nav-items" href="#typesOFjobs">Виды работ</a>
-					<a class="nav-items" href="#aboutPhotoStudio">О фотостудии</a>
-					<a class="nav-items" href="#price">Услуги и цены</a>
-					<a class="nav-items" href="#contacts">Контакты</a>
+					<a class="nav-item" href="#portfolio">Портфолио</a>
+					<a class="nav-item" href="#typesOFjobs">Виды работ</a>
+					<a class="nav-item" href="#aboutPhotoStudio">О фотостудии</a>
+					<a class="nav-item" href="#price">Услуги и цены</a>
+					<a class="nav-item" href="#contacts">Контакты</a>
 			</nav>
 		</div>
-		<div class="header-items">
+		<div class="header-item">
 			<button class="header-btn">ОБРАТНЫЙ ЗВОНОК</button>
 			<a class="header-tel" href="tel:+#">+7 (499) 344 60 91</a>
-			<a class="call" href="#">
+			<a class="call" href="tel:=#">
 				<img src="Img/call.svg" alt="">
 			</a>
-			<button class="burg-menu">
+			<button class="burg" onclick="ShowburgerMenu()">
 				<img src="Img/burger-menu.svg" alt="">
+				<div class="burg-menu">
+					<nav class="nav">
+						<a class="nav-item" href="#portfolio">Портфолио</a>
+						<a class="nav-item" href="#typesOFjobs">Виды работ</a>
+						<a class="nav-item" href="#aboutPhotoStudio">О фотостудии</a>
+						<a class="nav-item" href="#price">Услуги и цены</a>
+						<a class="nav-item" href="#contacts">Контакты</a>
+					</nav>
+				</div>
 			</button>
 		</div>
 	</header>
@@ -555,6 +564,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="JS/block/swiper.js"></script>
 	<script src="JS/block/more-text.js"></script>
+	<script src="JS/main.js"></script>
 </body>
 
 </html>

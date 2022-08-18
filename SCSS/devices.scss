@@ -1,41 +1,66 @@
-@media screen and (max-width: 1024px){
+//TODO: transferring colors to "colors"
+//-------header-media-qwerys-----
+@media screen and (max-width:1024px){
 	.header{
-
-
-		.header-items{
-		&:last-child{
-			gap: 6px;
-			// flex-wrap: wrap-reverse;
-			flex-direction: column-reverse;
+		&-item{
+			font-size: 12px;
+			&:last-child{
+				align-items: end;
+				flex-direction: column-reverse;
+				gap: 8px;
+			}
 		}
 		.nav{gap: 24px;}
 		.logo{min-width: 113px;}
-		.header-btn{padding: 8px 12.5px;}
-	}
 	}
 }
-//header destruction from width 864px, fix: add mobail view
-@media screen and (max-width: 800px){
+@media screen and(max-width:768px){
 	.header{
-		margin: 0 16px;
+		padding: 8px 16px;
 		justify-content: space-between;
-		.header-items{
-			&:nth-child(2){
-				display: none;
-			}
+		position: relative;
+		&-item{
+			&:nth-child(2){display: none;}
 			&:last-child{
+				gap: 16px;
 				align-items: center;
 				flex-direction: row;
 			}
 		}
-		.header-btn{display: none;}
-		.call{
-			display: inline-block;
-			img{
-				width: 26px;
-				height: auto;
+		&-btn{display: none;}
+		.call, .burg, .burg-menu{display: block;}
+		.burg-menu{
+			box-sizing: border-box;
+			position: absolute;
+			height: 100vh;
+			top: 100%;
+			right: 0;
+			background-color: #0F0F0FB2;
+			.nav{
+				margin: 16px;
+				font-size: 14px;
+				align-items: end;
+				justify-content: flex-end;
+				flex-direction: column;
+				gap: 16px;
+				&-item{color: #fff;}
+			}
+			overflow: hidden;
+			width: 0;
+			transition: all .3s ease;
+			&.show{width: 100vw;}
+		}
+		.logo{
+			min-width: 75px;
+			max-width: 90px;
+		}
+		@media screen and (max-width:500px){
+			.header-item:last-child{gap: 8px;}
+			.logo{
+				min-width: 63px;
+				max-width: 75px;
 			}
 		}
-		.burg-menu{display: block;}
 	}
 }
+//-------main-media-qwerys-----

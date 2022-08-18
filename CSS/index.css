@@ -1,3 +1,7 @@
+.call, .burg, .burg-menu {
+  display: none;
+}
+
 .header {
   box-sizing: border-box;
   display: flex;
@@ -10,51 +14,44 @@
   min-width: 63px;
 }
 
-.header-items {
+.header-item {
   display: flex;
   font-family: "Montserrat-Medium";
   font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
 }
-.header-items:last-child {
+.header-item:last-child {
   gap: 24px;
 }
-.header-items .nav-items {
-  margin-right: 32px;
+.header-item .nav {
+  align-items: center;
+  gap: 32;
+}
+.header-item .nav-item {
   color: #4A4A4A;
 }
-.header-items .nav-items:last-child {
-  margin-right: auto;
-}
-.header-items .nav-items:hover {
+.header-item .nav-item:hover {
   color: #E97522;
 }
-.header-items .nav-items:active {
+.header-item .nav-item:active {
   color: #333333;
 }
-.header-items .header-btn {
+.header-item .header-btn {
   padding: 8px 24px;
   color: #E97522;
   font-size: 0.86em;
   border: 2px solid #E97522;
   border-radius: 10px;
-  margin-right: 24px;
   transition: 0.3s;
 }
-.header-items .header-btn:hover {
+.header-item .header-btn:hover {
   background-color: #E97522;
   color: #fff;
 }
-.header-items .header-btn:active {
+.header-item .header-btn:active {
   transform: scale(0.95);
 }
-.header-items .header-tel {
+.header-item .header-tel {
   margin: auto 0;
-}
-.header-items .call {
-  display: none;
-}
-.header-items .burg-menu {
-  display: none;
 }
 
 .info {

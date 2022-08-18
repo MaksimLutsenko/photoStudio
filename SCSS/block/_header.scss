@@ -1,3 +1,4 @@
+.call, .burg, .burg-menu{display: none;}
 .header {
 	box-sizing: border-box;
 	display: flex;
@@ -5,23 +6,21 @@
 	align-items: center;
 	text-align: center;
 	padding: 22px 0;
-	.logo{
-		min-width: 63px;
-	}
+	.logo{min-width: 63px;}
 }
-.header-items {
+.header-item {
 	display: flex;
 	font-family: 'Montserrat-Medium';
 	@include adaptiv-font(14,12);
 	&:last-child {gap: 24px;}
-
-	.nav-items {
-		margin-right: 32px;
-		color: $text;
-
-		&:last-child {margin-right: auto;}
-		&:hover {color: $header-btn-color;}
-		&:active {color: $header-text--active;}
+	.nav{
+		align-items: center;
+		gap: 32;
+		&-item{
+			color: $text;
+			&:hover {color: $header-btn-color;}
+			&:active {color: $header-text--active;}	
+		}		
 	}
 	.header-btn{
 		padding: 8px 24px;
@@ -29,9 +28,7 @@
 		font-size: 0.86em;
 		border: 2px solid $header-btn-color;
 		border-radius: 10px;
-		margin-right: 24px;
 		transition: .3s;
-		
 		&:hover{
 			background-color: $header-btn-color;
 			color: $header-btn--hover-text;
@@ -39,6 +36,4 @@
 		&:active{transform: scale(0.95);}
 	}
 	.header-tel{margin: auto 0;}
-	.call{display: none;}
-	.burg-menu{display: none;}
 }
