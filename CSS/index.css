@@ -24,7 +24,7 @@
 }
 .header-item .nav {
   align-items: center;
-  gap: 32;
+  gap: 32px;
 }
 .header-item .nav-item {
   color: #4A4A4A;
