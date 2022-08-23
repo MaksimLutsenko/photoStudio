@@ -1,0 +1,87 @@
+@media screen and (max-width: 1024px) {
+  .header-item {
+    font-size: 12px;
+  }
+  .header-item:last-child {
+    align-items: end;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  .header .nav {
+    gap: 24px;
+  }
+  .header .logo {
+    min-width: 113px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 8px 16px;
+    justify-content: space-between;
+    position: relative;
+  }
+  .header-item:nth-child(2) {
+    display: none;
+  }
+  .header-item:last-child {
+    gap: 16px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .header-btn {
+    display: none;
+  }
+  .header .call, .header .burg, .header .burg-menu {
+    display: block;
+  }
+  .header .burg-menu {
+    box-sizing: border-box;
+    position: absolute;
+    height: 100vh;
+    top: 100%;
+    right: 0;
+    background-color: rgba(15, 15, 15, 0.6980392157);
+    overflow: hidden;
+    width: 0;
+    transition: all 0.3s ease;
+  }
+  .header .burg-menu .nav {
+    margin: 16px;
+    font-size: 14px;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .header .burg-menu .nav-item {
+    color: #fff;
+  }
+  .header .burg-menu.show {
+    width: 100vw;
+  }
+  .header .logo {
+    min-width: 75px;
+    max-width: 90px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 500px) {
+  .header .header-item:last-child {
+    gap: 8px;
+  }
+  .header .logo {
+    min-width: 63px;
+    max-width: 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main > div, main .Stages-work {
+    display: none;
+  }
+  main .info, main .slider-works,
+main .swiper-location {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+}

@@ -1,68 +1,76 @@
+.call, .burg, .burg-menu {
+  display: none;
+}
+
 .header {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   padding: 22px 0;
 }
+.header .logo {
+  min-width: 63px;
+}
 
-.header-items {
+.header-item {
   display: flex;
   font-family: "Montserrat-Medium";
-  font-size: 0.9rem;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
 }
-.header-items .nav {
-  display: flex;
+.header-item:last-child {
+  gap: 24px;
 }
-.header-items .nav-items {
-  margin-right: 32px;
+.header-item .nav {
+  align-items: center;
+  gap: 32px;
+}
+.header-item .nav-item {
   color: #4A4A4A;
 }
-.header-items .nav-items:last-child {
-  margin-right: auto;
-}
-.header-items .nav-items:hover {
+.header-item .nav-item:hover {
   color: #E97522;
 }
-.header-items .nav-items:active {
+.header-item .nav-item:active {
   color: #333333;
 }
-.header-items .header-btn {
+.header-item .header-btn {
   padding: 8px 24px;
   color: #E97522;
   font-size: 0.86em;
   border: 2px solid #E97522;
   border-radius: 10px;
-  margin-right: 24px;
   transition: 0.3s;
 }
-.header-items .header-btn:hover {
+.header-item .header-btn:hover {
   background-color: #E97522;
   color: #fff;
 }
-.header-items .header-btn:active {
+.header-item .header-btn:active {
   transform: scale(0.95);
 }
-.header-items .header-tel {
+.header-item .header-tel {
   margin: auto 0;
 }
 
 .info {
-  background-image: url(../Img/info-bg.png);
+  background-color: #444444;
+  background-image: url("../Img/info-vector(bg).svg");
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: cover;
+  background-position: 55% center;
+  background-size: 12.5%;
   color: #F5F5F5;
 }
 .info .info-inner {
   padding: 150px 0 100px 140px;
 }
 .info .info-content {
-  width: 63.8%;
+  width: 55vw;
 }
 .info h1 {
   font-family: "Montserrat-Bold";
-  font-size: 4.13rem;
+  font-size: calc(24px + 42 * ((100vw - 320px) / 1120));
   margin-bottom: 52px;
 }
 .info h2 {
@@ -71,7 +79,54 @@
 .info p {
   margin-bottom: 32px;
 }
+@media screen and (max-width: 1024px) {
+  .info h1 {
+    margin-bottom: 32px;
+  }
+  .info h2 {
+    margin-bottom: 15px;
+  }
+  .info .btn {
+    padding: 22px 27.5px;
+  }
+  .info .info-inner {
+    padding: 70px 0 70px 80px;
+  }
+  .info .info-content {
+    width: 75vw;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  h2, p {
+    display: none;
+  }
+  .info .info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    align-items: none;
+  }
+  .info .info-inner {
+    width: 100vw;
+    height: 80vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 19.5px 20.5px;
+    box-sizing: content;
+  }
+}
 .slider-works {
   min-width: 0px;
   text-align: center;
@@ -380,11 +435,13 @@
 }
 .price-cart {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 22px;
 }
 .price-cart .cart {
+  margin: 0 auto;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
