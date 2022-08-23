@@ -1,12 +1,13 @@
 .info{
-	background-image: url(../Img/info-bg.png);
+	background-color: #444444FF;
+	background-image: url("../Img/info-vector(bg).svg");
 	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: cover;
+	background-position: 55% center;
+	background-size: 12.5%;
 	color: $info--text;
 
 	.info-inner{padding: 150px 0 100px 140px;}
-	.info-content{width: 63.8%;}
+	.info-content{width: 55vw;}
 	h1{
 		font-family: 'Montserrat-Bold';
 		@include adaptiv-font(66,24);
@@ -14,6 +15,42 @@
 	}
 	h2{margin: 0 30% 24px 0;}
 	p{margin-bottom: 32px;}
+	@media screen and (max-width:1024px){
+		h1{margin-bottom: 32px;}
+		h2{margin-bottom: 15px;}
+		.btn{padding: 22px 27.5px;}
+		.info-inner{padding: 70px 0 70px 80px;}
+		.info-content{width: 75vw;}
+	}
+}
+@mixin FlexRowCenter(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width:600px){
+	h2, p{display: none;}
+	.info .info-content{
+		@include FlexRowCenter();
+		flex-direction: column;
+		padding: 10px;
+		width: 100vw;
+		text-align: center;
+		align-items: none;
+	}
+	.info .info-inner{
+		width: 100vw;
+		height: 80vh;
+		padding: 0;
+		@include FlexRowCenter();
+	}
+	.btn{
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 19.5px 20.5px;
+		box-sizing: content;
+	}
 }
 
 //slider-works

@@ -55,17 +55,18 @@
 }
 
 .info {
-  background-image: url(../Img/info-bg.png);
+  background-color: #444444;
+  background-image: url("../Img/info-vector(bg).svg");
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: cover;
+  background-position: 55% center;
+  background-size: 12.5%;
   color: #F5F5F5;
 }
 .info .info-inner {
   padding: 150px 0 100px 140px;
 }
 .info .info-content {
-  width: 63.8%;
+  width: 55vw;
 }
 .info h1 {
   font-family: "Montserrat-Bold";
@@ -78,7 +79,54 @@
 .info p {
   margin-bottom: 32px;
 }
+@media screen and (max-width: 1024px) {
+  .info h1 {
+    margin-bottom: 32px;
+  }
+  .info h2 {
+    margin-bottom: 15px;
+  }
+  .info .btn {
+    padding: 22px 27.5px;
+  }
+  .info .info-inner {
+    padding: 70px 0 70px 80px;
+  }
+  .info .info-content {
+    width: 75vw;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  h2, p {
+    display: none;
+  }
+  .info .info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    align-items: none;
+  }
+  .info .info-inner {
+    width: 100vw;
+    height: 80vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 19.5px 20.5px;
+    box-sizing: content;
+  }
+}
 .slider-works {
   min-width: 0px;
   text-align: center;
