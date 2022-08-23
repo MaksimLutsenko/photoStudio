@@ -64,3 +64,12 @@
 	}
 }
 //-------main-media-qwerys-----
+@media screen and (max-width:600px){
+	//TODo: del leter fix adapive-bags
+	main{
+		&>div, .Stages-work{display:none;}
+		.info, .slider-works,
+		 .swiper-location{display: block;}
+	}
+	.footer{display: none;}
+}

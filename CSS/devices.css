@@ -73,3 +73,15 @@
     max-width: 75px;
   }
 }
+@media screen and (max-width: 600px) {
+  main > div, main .Stages-work {
+    display: none;
+  }
+  main .info, main .slider-works,
+main .swiper-location {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+}
