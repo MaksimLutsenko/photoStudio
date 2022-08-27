@@ -130,10 +130,19 @@
 .slider-works {
   min-width: 0px;
   text-align: center;
-  padding: 20px;
 }
 .slider-works .slider-works-title {
-  margin: 80px 0 117px 0;
+  margin: 120px 0 117px 0;
+}
+@media screen and (max-width: 1024px) {
+  .slider-works .slider-works-title {
+    margin: 100px 0 107px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider-works .slider-works-title {
+    margin: 60px 0 55px 0;
+  }
 }
 
 .swiper-location {
