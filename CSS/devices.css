@@ -78,7 +78,8 @@
     display: none;
   }
   main .info, main .slider-works,
-main .swiper-location {
+main .swiper-location,
+main .Services {
     display: block;
   }
   .footer {

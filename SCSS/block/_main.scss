@@ -29,7 +29,7 @@
 	align-items: center;
 }
 @media screen and (max-width:600px){
-	h2, p{display: none;}
+	.info{h2, p{display: none;}}
 	.info .info-content{
 		@include FlexRowCenter();
 		flex-direction: column;

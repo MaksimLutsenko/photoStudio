@@ -11,14 +11,14 @@
 	min-height: 100vh;
 	margin: 80px 6.944vw;
 	margin-top: 60px;
+	grid-template: repeat(5, 27.431vw) / repeat(3, 27.153vw);
   
 	grid-template-areas:
-		"A A    B B   C C"
-		"D D    B B   E E"
-    	"G G    F F   E E"
-    	"G G    H H   H H"
-    	"I I    J J   K K";
-
+		"A  B  C"
+		"D  B  E"
+    	"G  F  E"
+    	"G  H  H"
+    	"I  J  K";
 	.cart{
 		position: relative;
 		box-sizing: border-box;
@@ -81,3 +81,24 @@
 	grid-area: K;
 	background-image: url('../Img/Services-cart/Cart11.jpg');
 }
+@media screen and (max-width: 600px){
+	.Services-container{
+			margin: 80px 0;
+			margin-top: 60px;
+			gap: 16px;
+			grid-template: repeat(7, 48vw) / repeat(2, 48vw);
+			grid-template-areas:
+				"A B"
+				"D B"
+				"G F"
+				"G J"
+				"C E"
+				"I E"
+				"K H";
+			.down-text{
+				display: block;
+				margin: 0 16px;
+				font-size: 14px;
+			}
+		}
+	}
