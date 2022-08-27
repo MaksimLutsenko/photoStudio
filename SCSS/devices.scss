@@ -69,7 +69,8 @@
 	main{
 		&>div, .Stages-work{display:none;}
 		.info, .slider-works,
-		 .swiper-location{display: block;}
+		 .swiper-location,
+		 .Services{display: block;}
 	}
 	.footer{display: none;}
 }
