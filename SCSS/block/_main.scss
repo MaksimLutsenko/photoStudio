@@ -77,6 +77,7 @@
 	padding: 60px 80px;
 	@media screen and (max-width: 1024px){&{padding: 60px 65px;}}
 	@media screen and (max-width: 768px){&{padding: 60px 30px;}}
+	@media screen and (max-width: 500px){&{padding: 60px 10px;}}
 	.swiper-location-title{margin-bottom: 80px;}
 	.btn{
 		margin: 0 auto;

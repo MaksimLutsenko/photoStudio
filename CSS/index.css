@@ -163,6 +163,11 @@
     padding: 60px 30px;
   }
 }
+@media screen and (max-width: 500px) {
+  .swiper-location {
+    padding: 60px 10px;
+  }
+}
 .swiper-location .swiper-location-title {
   margin-bottom: 80px;
 }
