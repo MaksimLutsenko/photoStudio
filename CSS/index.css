@@ -150,8 +150,18 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 60px 80px;
   text-align: center;
+  padding: 60px 80px;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-location {
+    padding: 60px 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-location {
+    padding: 60px 30px;
+  }
 }
 .swiper-location .swiper-location-title {
   margin-bottom: 80px;
