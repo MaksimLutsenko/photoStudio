@@ -5,13 +5,24 @@ const sliderWorks = new Swiper('.swiper-works', {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
-  spaceBetween: 15,
+  // spaceBetween: 15,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 0.3,
     modifier: 200,
     slideShadows : true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+    },
+    700: {
+      slidesPerView: 2.5,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
   },
   navigation: {
     nextEl: '.btn-next',
@@ -30,13 +41,10 @@ const sliderLocation = new Swiper('.slider-location', {
   grabCursor: true,
   spaceBetween: 15,
   breakpoints: {
-    400: {
+    0: {
       slidesPerView: 1,
     },
-    700: {
-      slidesPerView: 2,
-    },
-    1000: {
+    600: {
       slidesPerView: 3,
     },
   },
