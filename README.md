@@ -1,3 +1,3 @@
 # photoStudio
 
-# link: https://maksimlutsenko.github.io/photoStudio/
+# link: https://felinedev.github.io/photoStudio/
